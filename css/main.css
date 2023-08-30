@@ -97,6 +97,11 @@ img {
     border: none;
 }
 
+.object-fit-cover {
+    height: 30em;
+    min-width: 100%;
+}
+
 #home-recent-works a {
     text-decoration: none;
 }
