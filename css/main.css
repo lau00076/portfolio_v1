@@ -123,7 +123,7 @@ img {
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%;
+    width: 80%;
     opacity: 0;
     transition: .5s ease;
 }
@@ -162,6 +162,7 @@ img {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .work-thumbnail {
@@ -247,7 +248,7 @@ footer p {
     }
 
     .about_pic {
-        padding: 5em;
+        padding: 3em;
     }    
 
     .worklink p {
