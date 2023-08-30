@@ -55,6 +55,18 @@ img {
     max-width: 100%;
 }
 
+.fixed_msg {
+    position: fixed;
+    text-align: center;
+    color: white;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0 1em;
+    z-index: 1;
+}
+
 .bg-opacity-75 {
     margin-right: 25%;
 }
