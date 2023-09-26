@@ -264,6 +264,11 @@ footer p {
         padding: 3em;
     }
 
+    .showcase {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
     .work-section-thumbnail p {
         font-size: 100% !important;
     }
