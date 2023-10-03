@@ -116,19 +116,6 @@ img {
     position: relative;
 }
 
-/* .home-recent-works-bg {
-    position: absolute;
-    background-color: var(--secondary-color);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 80%;
-    opacity: 0;
-    transition: .5s ease;
-} */
-
 .home-recent-works-h:hover .home-recent-works-bg {
     opacity: 1;
     transform: scale(1.2);
@@ -181,7 +168,15 @@ img {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden;    
+}
+
+.work-section-photo {
+    max-width: 100%;
+    width: inherit;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
 }
 
 .thumbnail-overlay {
@@ -198,6 +193,28 @@ img {
 .work-section-thumbnail:hover .thumbnail-overlay {
     bottom: 0;
     height: 0;
+}
+
+.showcase-i {
+    display: grid;
+    margin: 0 auto;
+}
+
+.work-i {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-i-pic {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {
@@ -259,7 +276,6 @@ footer p {
     }
 
     .showcase {
-        display: grid;
         grid-template-columns: auto auto;
     }
 
@@ -310,6 +326,37 @@ footer p {
 
     .work-section-thumbnail p {
         font-size: 140% !important;
+    }
+
+    .showcase-i {
+        grid-template-areas: 
+        'sparrow_wing sparrow_profile'
+        'sparrow_wing_text sparrow_profile_text'
+        'sparrow_fly sparrow_fly_text';
+    }
+    
+    #sparrow_wing {
+        grid-area: sparrow_wing;
+    }
+
+    #sparrow_wing_text {
+        grid-area: sparrow_wing_text;
+    }
+
+    #sparrow_profile {
+        grid-area: sparrow_profile;
+    }
+
+    #sparrow_profile_text {
+        grid-area: sparrow_profile_text;
+    }
+
+    #sparrow_fly {
+        grid-area: sparrow_fly;
+    }
+
+    #sparrow_fly_text {
+        grid-area: sparrow_fly_text;
     }
 
     .contact-text {

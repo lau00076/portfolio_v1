@@ -11,7 +11,7 @@
     <!-- CSS variables -->
     <link rel="stylesheet" href="../css/main.css">
     <!-- hover variables -->
-    <link rel="stylesheet" href="../css/Hover/css/hover.css">
+    <link rel="stylesheet" href="../css/hover.css">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>YEETING LAU</title>
+    <title>YEETING LAU - Work: Illustration</title>
 </head>
 <body>
     <ul class="skip-links" role="landmark">
-        <li><a href="#home-latest-work" aria-label="Skip to recent works"><sup>Skip to recent works</sup></a></li>
         <li><a href="#footer" aria-label="Skip to footer"><sup>Skip to footer</sup></a></li>
     </ul>
     <header>
@@ -37,7 +36,7 @@
                 </a>
             </div>
             <nav class="navbar w-100 navbar-expand" role="navigation">
-                <ul class="navbar-nav w-100 nav-justified">
+                <ul class="work-navbar-nav navbar-nav w-100 nav-justified">
                     <li class="nav-item">
                         <a href="work.html" class="nav-link text-light"><span>Work</span></a>
                     </li>
@@ -48,58 +47,45 @@
             </nav>
         </nav>
     </header>
-    <main role="main">
-        <div class="card" role="banner">
-            <!-- responsive position of image -->
-            <picture class="">
-                <source srcset="../image/banner/1x/home_banner_tri_1x_1920px.png,
-                    ../image/banner/2x/home_banner_tri_2x_3840px.png 2x"
-                        media="(min-width:1920px)">
-                <source srcset="../image/banner/1x/home_banner_tri_1x_820px.png,
-                    ../image/banner/2x/home_banner_tri_2x_1640px.png 2x"
-                        media="(min-width: 820px)">
-                <source srcset="../image/banner/1x/home_banner_tri_1x_375px.png,
-                    ../image/banner/2x/home_banner_tri_2x_750px.png 2x"
-                        media="(min-width: 375px)">
-                <img class="object-fit-cover" src="../image/banner/1x/home_banner_tri_1x_1920px.png" alt="home banner image"> 
-            </picture>
-            <div class="card-img-overlay">
-                <div class="text-bg-dark bg-opacity-50 px-3 py-1 me-5 m-md-3 m-lg-5">
-                    <p class="fs-1">THERE ARE MANY SHAPES OF THE WORLD</p><br>
-                    <p class="fs-4">FEEL IT</p>
-                    <p class="fs-3">TOUCH IT</p>
-                    <p class="fs-2 fw-bold">WE WILL FIND IT</p>
-                </div>
-            </div>
+    <main class="main-content mt-5" role="main">
+        <div class="h1 work-i-intro px-5">
+            <p>Illustration: Sparrow</p>
         </div>
-        <div class="main-content">
-            <div class="d-xl-flex justify-content-xl-evenly align-items-xl-center mt-5">
-                <div class="about_pic p-5 d-grid mx-auto">
-                    <img class="about_pic_photo px-5"
-                        srcset="../image/banner/1x/about_pic_1x_640px.jpg,
-                                ../image/banner/2x/about_pic_2x_1280px.jpg 2x"
-                        src="../image/banner/1x/about_pic_1x_640px.jpg" 
-                        alt="Selfie">
-                </div>
-                <div class="intro-text px-4">
-                    <p>Yee Ting Lau is an Interactive Media Design student who has a fondness for Cantonese pop music.</p>
-                    <p>She was raised in Hong Kong while currently living in Ottawa, Canada. She enjoys strolling through the streets and observing daily life.</p>
-                </div>
-            </div>            
-            <section class="mt-4 p-4 work-section">
-                <div class="home-recent-works-h w-50">                
-                    <h2 class="h2" id="home-recent-works"><a href="work.html" class="text-body">Recent Work</a></h2>
-                    <div class="home-recent-works-bg"></div>
-                </div>
-                <a href="https://lau00076.github.io/mtm6201-midterm/page/home.html" target="_blank"  rel="noopener noreferrer">
-                    <div class="work-thumbnail p-5 shadow-sm">            
-                        <img class="work-thumbnail-img" src="../image/work_thumpnail/1x/bru_logo_1x.png" alt="thumbnail image of recent works">
-                    </div>
-                </a>
-                <div class="worklink">
-                    <p><a href="https://lau00076.github.io/mtm6201-midterm/page/home.html" target="_blank"  rel="noopener noreferrer">Web Design: Book R Us</a></p>
-                </div>
-            </section>
+        <div class="h4 text-body-secondary work-i-intro px-5">
+            <p>Challenge: illustrate an avatar representing an animal</p>
+            <p>Requirements: vector in 3 major Apple dimensions</p>
+        </div>
+        <div class="work-i-intro px-5 fs-6">
+            <p>Sparrow is one of the most widespread birds in the world. We may find them both in city and rural area. This tiny creature is fragile but tough.</p>
+        </div>
+        <div class="work-section showcase-i">            
+            <div class="work-i" id="sparrow_wing">
+                <img class="work-i-pic" 
+                srcset="../image/illustration_avatar/avatar_iphone_avator_icon.png,
+                    ../image/illustration_avatar/avatar_iphone_avator_icon_2x.png 2x"
+                src="../image/illustration_avatar/avatar_iphone_avator_icon.jpg" alt="wing illustration of iPhone avator">
+            </div>
+            <div class="work-i" id="sparrow_wing_text">
+                <p>xxxxxxxxxxxxxx</p>
+            </div>
+            <div class="work-i" id="sparrow_profile">
+                <img class="work-i-pic" 
+                srcset="../image/illustration_avatar/avatar_ipad_avator_icon.png,
+                    ../image/illustration_avatar/avatar_ipad_avator_icon_2x.png 2x"
+                src="../image/illustration_avatar/avatar_ipad_avator_icon.jpg" alt="super sparrow illustration of iPhone avator">
+            </div>
+            <div class="work-i" id="sparrow_profile_text">
+                <p>xxxxxxxxxxxxxx</p>
+            </div>
+            <div class="work-i" id="sparrow_fly">
+                <img class="work-i-pic" 
+                srcset="../image/illustration_avatar/avatar_itunes_avator_icon.png,
+                    ../image/illustration_avatar/avatar_itunes_avator_icon_2x.png 2x"
+                src="../image/illustration_avatar/avatar_itunes_avator_icon.jpg" alt="flying sapprow illustration of iPhone avator">
+            </div>
+            <div class="work-i"id="sparrow_fly_text">
+                <p>xxxxxxxxxxxxxx</p>
+            </div>
         </div>
     </main>
     <footer class="p-4 mb-0 mt-5" id="footer" role="contentinfo">
@@ -107,29 +93,29 @@
             <div class="footer-icon">
                 <a href="https://ti-dia.com/" target="_blank" rel="noopener noreferrer">
                     <img srcset="../image/icon/1x/icon_1x_wordpress.png,
-                            ../image/icon/2x/icon_2x_wordpress.png 2x,
-                            ../image/icon/3x/icon_3x_wordpress.png 3x"
+                                ../image/icon/2x/icon_2x_wordpress.png 2x,
+                                ../image/icon/3x/icon_3x_wordpress.png 3x"
                         src="../image/icon/1x/icon_1x_wordpress.png" 
                         alt="Wordpress contact">
                 </a>
                 <a href="http://www.linkedin.com/in/ytlautracy" target="_blank" rel="noopener noreferrer">
                     <img srcset="../image/icon/1x/icon_1x_linkedin.png,
-                            ../image/icon/2x/icon_2x_linkedin.png 2x,
-                            ../image/icon/3x/icon_3x_linkedin.png 3x"
+                                ../image/icon/2x/icon_2x_linkedin.png 2x,
+                                ../image/icon/3x/icon_3x_linkedin.png 3x"
                         src="../image/icon/1x/icon_1x_linkedin.png" 
                         alt="LinkedIn contact">
                 </a>
                 <a href="https://github.com/lau00076" target="_blank" rel="noopener noreferrer">
                     <img srcset="../image/icon/1x/icon_1x_github.png,
-                            ../image/icon/2x/icon_2x_github.png 2x,
-                            ../image/icon/3x/icon_3x_github.png 3x"
+                                ../image/icon/2x/icon_2x_github.png 2x,
+                                ../image/icon/3x/icon_3x_github.png 3x"
                         src="../image/icon/1x/icon_1x_github.png" 
                         alt="Github contact">
                 </a>
             </div>
             <div>
                 <p>&copy; 2023. All rights reserved.</p>
-            </div>
+            </div>          
         </div>
         <div class="d-flex justify-content-md-center">
             <p ><a href="#home-header" aria-label="Back to top"><sub>Back to Top</sub></a></p>
