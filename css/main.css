@@ -144,7 +144,6 @@ img {
 }
 
 .work-thumbnail-info {
-
     margin: 0 auto;
     padding: 0 2em;
     text-align: center;
@@ -197,6 +196,7 @@ img {
 
 .showcase-i {
     display: grid;
+    grid-gap: 1em;
     margin: 0 auto;
 }
 
@@ -207,6 +207,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.work-i-text {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .work-i-pic {
@@ -329,6 +335,7 @@ footer p {
     }
 
     .showcase-i {
+        grid-template-columns: 50% 50%;
         grid-template-areas: 
         'sparrow_wing sparrow_profile'
         'sparrow_wing_text sparrow_profile_text'
