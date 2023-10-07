@@ -203,7 +203,6 @@ img {
 .work-i {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,6 +220,11 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#sparrow_wing img {
+    width: 9em;
+    height: auto;
 }
 
 button {
