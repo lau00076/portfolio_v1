@@ -6,7 +6,7 @@
     --btn-font-size-wk: .5rem;
     --primary-font-family: 'Libre Baskerville', serif;
     --secondary-font-family: 'Lato', sans-serif;
-    --tertiary-font-size: 'Charm', cursive;;
+    --tertiary-font-family: 'Charm', cursive;;
 }
 
 a {
@@ -89,7 +89,7 @@ img {
 }
 
 .nav-item {
-    font-family: var(--tertiary-font-size);
+    font-family: var(--tertiary-font-family);
     font-size: 1.5em;
 }
 
@@ -127,11 +127,22 @@ img {
 }
 
 .work-thumbnail {
+    position: relative;
+    max-width: 100%;
     width: 290px;
     height: 194px;
     margin: 1em 0;
     display: flex;
-    align-items: center;    
+    align-items: center;
+    overflow: hidden;
+}
+
+.work-thumbnail-img {
+    max-width: 100%;
+    width: inherit;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
 }
 
 .showcase {
@@ -167,7 +178,7 @@ img {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    overflow: hidden;    
+    overflow: hidden;
 }
 
 .work-section-photo {
@@ -227,6 +238,49 @@ img {
     height: auto;
 }
 
+.quicklook {
+    font-family: var(--tertiary-font-family);
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.wdc-detail h4 {
+    color: var(--tertiary-color);
+    background-color: var(--quaternary-color);
+    padding: 10px;
+}
+
+.research img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+}
+
+#hmw {
+    font-family: var(--tertiary-font-family);
+    color: var(--tertiary-color);
+    border-left: solid 2px var(--tertiary-color);
+    padding-left: 20px;
+}
+
+.solution img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+}
+
+.pitch-patient, .pitch-paramedic {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.pitch-patient img, .pitch-paramedic img {
+    max-width: 100%;
+    padding: 10px;
+}
+
 button {
     font-size: var(--btn-font-size-wk) !important;
     background-color: var(--tertiary-color) !important;
@@ -258,7 +312,7 @@ footer p {
 }
 
 .quote {
-    font-family: var(--tertiary-font-size);
+    font-family: var(--tertiary-font-family);
 }
 
 @media screen and (min-width: 820px) {
@@ -285,8 +339,25 @@ footer p {
         padding: 3em;
     }
 
+    .home-recent-works {
+        display: flex;        
+    }
+
+    .home-recent-works div {
+        margin: 0 10px;
+    }
+
     .showcase {
         grid-template-columns: auto auto;
+    }
+
+    .overview {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    #overview-b {
+        border-right: solid 1px white;
     }
 
     .work-section-thumbnail p {
