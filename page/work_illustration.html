@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS reset-->
     <link rel="stylesheet" href="../css/reset.css">
-    <!-- bootstrap setting -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- CSS variables -->
     <link rel="stylesheet" href="../css/main.css">
-    <!-- hover variables -->
-    <link rel="stylesheet" href="../css/hover.css">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,80 +22,69 @@
 </head>
 <body>
     <ul class="skip-links" role="landmark">
+        <li><a href="#home-latest-work" aria-label="Skip to recent works"><sup>Skip to recent works</sup></a></li>
         <li><a href="#footer" aria-label="Skip to footer"><sup>Skip to footer</sup></a></li>
     </ul>
     <header>
-        <nav class="navbar navbar-expand-md" role="landmark">
-            <div id="home-header" class="container-fluid justify-content-evenly justify-content-md-start">
-                <a class="navbar-brand ps-md-3 ps-xl-5" href="yeetinglau.html" aria-label="Go to the home page">
-                    <h3 class="h3">YEETING LAU</h3>
+        <nav class="topnav" id="topnav" role="landmark">
+            <div id="topnav-brand" class="topnav-brand">
+                <a href="yeetinglau.html" aria-label="Go to the home page">
+                    <h3>YEETING LAU</h3>
                 </a>
             </div>
-            <nav class="navbar w-100 navbar-expand" role="navigation">
-                <ul class="work-navbar-nav navbar-nav w-100 nav-justified">
-                    <li class="nav-item">
-                        <a href="work.html" class="nav-link text-light"><span>Work</span></a>
-                    </li>
-                    <li class="nav-item" itemscope itemtype="https://schema.org/ContactPage">
-                        <a href="contact.html" class="nav-link text-light" aria-label="Go to the contact page" itemprop="relatedLink"><span>Contact</span></a>
-                    </li>
-                </ul>
-            </nav>
+            <div id="topnav-work" class="topnav-work">
+                <a href="work.html" aria-label="Go to the work page">
+                    <p>Work</p>
+                </a>
+            </div>
         </nav>
     </header>
-    <main class="main-content mt-5 px-5" role="main">
-        <div class="h1 work-i-intro">
-            <p>Illustration: Sparrow</p>
-        </div>
-        <div class="h4 text-body-secondary work-i-intro">
-            <p>CHALLENGE: Illustrate an avatar representing an animal</p>
-        </div>
-        <div class="work-i-intro border-bottom fs-6">
-            <p>Sparrow is one of the most widespread birds in the world. We may find them both in city and rural area. This tiny creature is fragile but tough.</p>
-        </div>
-        <div class="work-section showcase-i mt-5">            
-            <div class="work-i" id="sparrow_wing">
-                <img class="work-i-pic" 
-                srcset="../image/illustration_avatar/avatar_iphone_avator_icon.png,
-                    ../image/illustration_avatar/avatar_iphone_avator_icon_2x.png 2x"
-                src="../image/illustration_avatar/avatar_iphone_avator_icon.jpg" alt="wing illustration of iPhone avator">
+    <main class="main" role="main">
+        <div class="illustration-body">
+            <div class="work-i-h">
+                <h1>Illustration: Sparrow</h1>
             </div>
-            <div class="work-i-text" id="sparrow_wing_text">
-                <p>This is a black-and-white illustration of a sparrow. In order to show this tiny animal is able to travel around the world, I chose a wing as a sign. In addition to the shape, I used the negative space to demonstrate the wing's layers.</p>
+            <div class="work-i-intro">
+                <h3>CHALLENGE: Illustrate an avatar representing an animal</h3>
+                <p>Sparrow is one of the most widespread birds in the world. We may find them both in city and rural area. This tiny creature is fragile but tough.</p>
             </div>
-            <div class="work-i" id="sparrow_profile">
-                <img class="work-i-pic" 
-                srcset="../image/illustration_avatar/avatar_ipad_avator_icon.png,
-                    ../image/illustration_avatar/avatar_ipad_avator_icon_2x.png 2x"
-                src="../image/illustration_avatar/avatar_ipad_avator_icon.jpg" alt="super sparrow illustration of iPhone avator">
-            </div>
-            <div class="work-i-text" id="sparrow_profile_text">
-                <p>This is a coloured illustration of a sparrow. I designed the background with leaves to show the relationship between the sparrow and nature. When I drew the sparrow, I accidentally discovered the sparrow looked like a superhero with a mask. Super Sparrow is born..</p>
-            </div>
-            <div class="work-i" id="sparrow_fly">
-                <img class="work-i-pic" 
-                srcset="../image/illustration_avatar/avatar_itunes_avator_icon.png,
-                    ../image/illustration_avatar/avatar_itunes_avator_icon_2x.png 2x"
-                src="../image/illustration_avatar/avatar_itunes_avator_icon.jpg" alt="flying sapprow illustration of iPhone avator">
-            </div>
-            <div class="work-i-text"id="sparrow_fly_text">
-                <p>This is an illustration of Super Sparrow dancing with its shadow on the water. It is challenging to draw the shadow on water. I needed to keep the details of Super Sparrow while clearly showing it is only a shadow instead of a twin. So, I made the shadow transparent to some extent and added layers on top. In the meantime, I used soft colours and a childlike font to present the innocence and playful feeling.</p>
+            <div class="work-i-section">
+                <div class="work-i-frame" id="sparrow_wing">
+                    <img class="work-i-pic" 
+                    srcset="../image/illustration_avatar/avatar_iphone_avator_icon.png,
+                        ../image/illustration_avatar/avatar_iphone_avator_icon_2x.png 2x"
+                    src="../image/illustration_avatar/avatar_iphone_avator_icon.jpg" alt="wing illustration of iPhone avator">
+                </div>
+                <div class="work-i-text" id="sparrow_wing_text">
+                    <p>This is a black-and-white illustration of a sparrow. In order to show this tiny animal is able to travel around the world, I chose a wing as a sign. In addition to the shape, I used the negative space to demonstrate the wing's layers.</p>
+                </div>
+                <div class="work-i-frame" id="sparrow_profile">
+                    <img class="work-i-pic" 
+                    srcset="../image/illustration_avatar/avatar_ipad_avator_icon.png,
+                        ../image/illustration_avatar/avatar_ipad_avator_icon_2x.png 2x"
+                    src="../image/illustration_avatar/avatar_ipad_avator_icon.jpg" alt="super sparrow illustration of iPhone avator">
+                </div>
+                <div class="work-i-text" id="sparrow_profile_text">
+                    <p>This is a coloured illustration of a sparrow. I designed the background with leaves to show the relationship between the sparrow and nature. When I drew the sparrow, I accidentally discovered the sparrow looked like a superhero with a mask. Super Sparrow is born..</p>
+                </div>
+                <div class="work-i-frame" id="sparrow_fly">
+                    <img class="work-i-pic" 
+                    srcset="../image/illustration_avatar/avatar_itunes_avator_icon.png,
+                        ../image/illustration_avatar/avatar_itunes_avator_icon_2x.png 2x"
+                    src="../image/illustration_avatar/avatar_itunes_avator_icon.jpg" alt="flying sapprow illustration of iPhone avator">
+                </div>
+                <div class="work-i-text"id="sparrow_fly_text">
+                    <p>This is an illustration of Super Sparrow dancing with its shadow on the water. It is challenging to draw the shadow on water. I needed to keep the details of Super Sparrow while clearly showing it is only a shadow instead of a twin. So, I made the shadow transparent to some extent and added layers on top. In the meantime, I used soft colours and a childlike font to present the innocence and playful feeling.</p>
+                </div>
             </div>
         </div>
     </main>
-    <footer class="p-4 mb-0 mt-5" id="footer" role="contentinfo">
-        <div class="d-md-flex justify-content-md-between align-items-md-center">
+    <footer class="footer" id="footer" role="contentinfo">
+        <div class="footer-content">
             <div>
                 <p>&copy; 2023. All rights reserved.</p>
             </div>
             <div class="footer-icon">
-                <a href="https://ti-dia.com/" target="_blank" rel="noopener noreferrer">
-                    <img srcset="../image/icon/1x/icon_1x_wordpress.png,
-                            ../image/icon/2x/icon_2x_wordpress.png 2x,
-                            ../image/icon/3x/icon_3x_wordpress.png 3x"
-                        src="../image/icon/1x/icon_1x_wordpress.png" 
-                        alt="Wordpress contact">
-                </a>
                 <a href="http://www.linkedin.com/in/ytlautracy" target="_blank" rel="noopener noreferrer">
                     <img srcset="../image/icon/1x/icon_1x_linkedin.png,
                             ../image/icon/2x/icon_2x_linkedin.png 2x,
@@ -116,8 +101,8 @@
                 </a>
             </div>            
         </div>
-        <div class="d-flex justify-content-md-center">
-            <p ><a href="#home-header" aria-label="Back to top"><sub>Back to Top</sub></a></p>
+        <div class="backtotop">
+            <a href="#topnav" aria-label="Back to top"><p>Back to Top</p></a>
         </div>
     </footer>
 </body>
