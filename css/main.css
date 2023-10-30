@@ -254,7 +254,7 @@ img {
     margin: 1em;
 }
 
-/* wdc page css setting */
+/* WDC page css setting */
 .wdc-body {
     padding: 2.5em;
 }
@@ -393,6 +393,7 @@ footer p {
         grid-area: topnav-work;
     }
 
+    /* home page css setting */
     .topbanner img {
         height: 30em;
     }
@@ -420,6 +421,7 @@ footer p {
         height: 200px;
     }
     
+    /* work page css setting */
     .work-body {
         padding: 4em;
     }
@@ -433,10 +435,12 @@ footer p {
         margin: 4em;
     }
 
+    /* illustration page css setting */
     .illustration-body {
         padding: 4em 8em;
     }
 
+    /* WDC page css setting */
     .wdc-intro {
         padding-bottom: 4em;
     }
@@ -478,12 +482,14 @@ footer p {
         display: flex;
     }
 
+    /* footer page css setting */
     .footer {
         padding: 2em 4em;
     }
 }
 
 @media screen and (min-width: 1280px) {
+    /* home page css setting */
     .about {
         display: flex;
         align-items: center;
@@ -499,6 +505,7 @@ footer p {
         grid-template-columns: auto auto;
     }
     
+    /* work page css setting */
     .work-body {
         margin: 0 4em;
         padding: 6em;
@@ -526,10 +533,12 @@ footer p {
         padding: 2em 1em;
     }
 
+    /* illustration page css setting */
     .illustration-body {
         padding: 4em 15em;
     }
 
+    /* WDC page css setting */
     .wdc-intro {
         padding-bottom: 3em;
     }
